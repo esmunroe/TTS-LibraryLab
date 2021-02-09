@@ -1,7 +1,15 @@
 package library;
 
+import java.util.ArrayList;
+
 public class Library {
     // Add the missing implementation to this class
+    private String address;
+    private ArrayList<String> books;
+
+    public Library(String addr){
+        this.address = addr;
+    }
 
     public static void main(String[] args) {
         // Create two libraries
