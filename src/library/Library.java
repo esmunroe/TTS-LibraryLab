@@ -23,6 +23,23 @@ public class Library {
         System.out.println(address);
     }
 
+    public void borrowBook(String bookTitle){
+        String result = "";
+        for (Book book : books) {
+            if (bookTitle.equalsIgnoreCase(book.getTitle())) {
+                if (book.isBorrowed()) {
+                    result = "Sorry, this book is already borrowed.";
+                } else {
+                    book.borrowed();
+                    result = "You successfully borrowed " + bookTitle;
+                }
+            } else {
+                result = "Sorry, this book is not in our catalog.";
+            }
+        }
+        System.out.println(result);
+    }
+
     public static void main(String[] args) {
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
