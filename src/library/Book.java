@@ -22,12 +22,12 @@ public class Book {
    
     // Returns true if the book is rented, false otherwise
     public boolean isBorrowed() {
-        return this.borrowed;
+        return borrowed;
     }
    
     // Returns the title of the book
     public String getTitle() {
-        return this.title;
+        return title;
     }
 
     public static void main(String[] arguments) {
