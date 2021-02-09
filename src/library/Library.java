@@ -24,7 +24,7 @@ public class Library {
     }
 
     public void borrowBook(String bookTitle){
-        String result = "";
+        String result = "Sorry, this book is not in our catalog.";
         for (Book book : books) {
             if (bookTitle.equalsIgnoreCase(book.getTitle())) {
                 if (book.isBorrowed()) {
@@ -33,8 +33,6 @@ public class Library {
                     book.borrowed();
                     result = "You successfully borrowed " + bookTitle;
                 }
-            } else {
-                result = "Sorry, this book is not in our catalog.";
             }
         }
         System.out.println(result);
