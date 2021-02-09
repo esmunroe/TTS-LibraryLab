@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Library {
     // Add the missing implementation to this class
     private String address;
-    private ArrayList<Book> books;
+    private ArrayList<Book> books = new ArrayList<>();
 
     public Library(String addr){
         this.address = addr;
