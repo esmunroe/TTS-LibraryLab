@@ -16,8 +16,7 @@ public class Library {
     }
 
     public static void printOpeningHours(){
-        String hours = "9AM to 5PM, Daily";
-        System.out.println(hours);
+        System.out.println("Libraries are open daily from 9am to 5pm.");
     }
 
     public void printAddress(){
