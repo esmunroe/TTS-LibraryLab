@@ -5,10 +5,14 @@ import java.util.ArrayList;
 public class Library {
     // Add the missing implementation to this class
     private String address;
-    private ArrayList<String> books;
+    private ArrayList<Book> books;
 
     public Library(String addr){
         this.address = addr;
+    }
+
+    public void addBook(Book book){
+        this.books.add(book);
     }
 
     public static void main(String[] args) {
