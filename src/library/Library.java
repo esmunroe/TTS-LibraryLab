@@ -15,6 +15,15 @@ public class Library {
         this.books.add(book);
     }
 
+    public static void printOpeningHours(){
+        String hours = "9AM to 5PM, Daily";
+        System.out.println(hours);
+    }
+
+    public void printAddress(){
+        System.out.println(address);
+    }
+
     public static void main(String[] args) {
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
