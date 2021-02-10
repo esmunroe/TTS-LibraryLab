@@ -48,6 +48,15 @@ public class Library {
         }
     }
 
+    public void returnBook(String bookTitle){
+        for (Book book : books){
+            if (bookTitle.equalsIgnoreCase(book.getTitle()) && book.isBorrowed()){
+                book.returned();
+                System.out.println("You successfully returned " + book.getTitle());
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
