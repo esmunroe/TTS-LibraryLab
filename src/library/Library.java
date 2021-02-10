@@ -31,7 +31,7 @@ public class Library {
                     result = "Sorry, this book is already borrowed.";
                 } else {
                     book.borrowed();
-                    result = "You successfully borrowed " + bookTitle;
+                    result = "You successfully borrowed " + book.getTitle();
                 }
             }
         }
