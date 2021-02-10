@@ -38,6 +38,16 @@ public class Library {
         System.out.println(result);
     }
 
+    public void printAvailableBooks(){
+        if (books.isEmpty()){
+            System.out.println("No books in catalog.");
+        } else {
+            for (Book book : books) {
+                if (!book.isBorrowed()) System.out.println(book.getTitle());
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
